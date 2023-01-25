@@ -1,11 +1,10 @@
-![Demo Snapshot](https://github.com/jala886/20230116--jianli--NYCSchools-UIKit/blob/main/ScreenShot%20main.png)
+![Demo Snapshot]()
 This is  a demo for a school Informations 
 
 
 ## 🚀 Features
 ```
-SwiftUI
-WebKit Embed
+UIKit
 TDD development
 ```
 ### 🖼 Overlays
