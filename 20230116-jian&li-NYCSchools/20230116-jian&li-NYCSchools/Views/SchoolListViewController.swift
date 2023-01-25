@@ -14,6 +14,8 @@ class SchoolListViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         setupUI()
+        let navBar = UINavigationBar()
+        view.addSubview(navBar)
     }
     
     private var nameLabel: UILabel = {

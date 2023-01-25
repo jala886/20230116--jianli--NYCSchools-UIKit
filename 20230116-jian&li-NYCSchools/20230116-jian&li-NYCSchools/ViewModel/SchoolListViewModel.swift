@@ -30,7 +30,7 @@ class SchoolListViewModel: ObservableObject {
             }
         }
         do {
-            let data = try NetworkManager.downloadSATSchoolData{ data in
+            try NetworkManager.downloadSATSchoolData{ data in
                 self.loadSATData(data: data)
             }
             print("load data success!")

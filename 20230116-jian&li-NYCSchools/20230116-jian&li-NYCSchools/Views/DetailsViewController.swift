@@ -8,9 +8,9 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-    let data: SchoolSATModel
+    let data: SchoolSATModel?
     
-    init(data: SchoolSATModel) {
+    init(data: SchoolSATModel?) {
         self.data = data
         super.init(nibName: nil, bundle: nil)
     }
@@ -37,7 +37,7 @@ class DetailsViewController: UIViewController {
     }()
     lazy var nameLabel:UILabel = {
         let label = UILabel()
-        label.text = data.name
+        label.text = data?.name ?? "No Value"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16)
         label.numberOfLines = 1
@@ -56,7 +56,7 @@ class DetailsViewController: UIViewController {
     }()
     lazy var numberLabel:UILabel = {
         let label = UILabel()
-        label.text = data.numOfSAT
+        label.text = data?.numOfSAT ?? "No Value"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16)
         label.numberOfLines = 1
@@ -74,7 +74,7 @@ class DetailsViewController: UIViewController {
     }()
     lazy var readingLabel:UILabel = {
         let label = UILabel()
-        label.text = data.readingAvgScore
+        label.text = data?.readingAvgScore ?? "No Value"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16)
         label.numberOfLines = 1
@@ -92,7 +92,7 @@ class DetailsViewController: UIViewController {
     }()
     lazy var mathLabel:UILabel = {
         let label = UILabel()
-        label.text = data.mathAvgScore
+        label.text = data?.mathAvgScore ?? "No Value"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16)
         label.numberOfLines = 1
@@ -110,7 +110,7 @@ class DetailsViewController: UIViewController {
     }()
     lazy var writingLabel:UILabel = {
         let label = UILabel()
-        label.text = data.writingAvgScore
+        label.text = data?.writingAvgScore ?? "No Value"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16)
         label.numberOfLines = 1
